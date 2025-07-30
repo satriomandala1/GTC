@@ -23,7 +23,8 @@ const BlogPostTemplate = (props) => {
       <Seo 
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-        image={post.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images.fallback.src}
+        image={post.frontmatter.thumbnail?.childImageSharp?.gatsbyImageData?.images?.fallback?.src}
+
 
       />
       <article
