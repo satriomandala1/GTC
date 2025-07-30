@@ -69,3 +69,4 @@ We welcome contributions and feedback. If you have ideas for improvements or spo
 
 **Inspired by <a target="_blank" href="https://github.com/ImedAdel/gatsby-london" rel="nofollow">Gatsby London</a>**
 # Guestteacher
+# GTC
