@@ -1,6 +1,6 @@
 ---
 templateKey: artikel-sub-page
-thumbnail: /img/linux.jpg
+thumbnail: /img/bisnis.jpg
 date: 2023-03-16T04:59:59.653Z
 title: Bisnis Digital
 description: "Jalan baru menuju kesuksesan di era teknologi"

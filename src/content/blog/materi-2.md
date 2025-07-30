@@ -1,6 +1,6 @@
 ---
 templateKey: artikel-sub-page
-thumbnail: /img/linux.jpg
+thumbnail: /img/webdevelop.jpg
 date: 2023-03-16T04:59:59.653Z
 title: Web Development
 description: "Membangun masa depan dunia digital"

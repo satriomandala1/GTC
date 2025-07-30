@@ -1,6 +1,6 @@
 ---
 templateKey: artikel-sub-page
-thumbnail: /img/linux.jpg
+thumbnail: /img/mikrotik.jpg
 date: 2023-03-16T04:59:59.653Z
 title: Mikrotik Fundamental
 description: "Pintu masuk ke dunia jaringan profesional"

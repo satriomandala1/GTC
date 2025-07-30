@@ -18,6 +18,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
           siteMetadata {
             title
             description
+            keywords
             author
             image
             siteUrl
@@ -72,6 +73,10 @@ function SEO({ description, lang, meta, keywords, title, image }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `keywords`,
+          content: `web development, gatsby, react, seo, javascript`
         },
       ]
         .concat(

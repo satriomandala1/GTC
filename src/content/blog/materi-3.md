@@ -1,6 +1,6 @@
 ---
 templateKey: artikel-sub-page
-thumbnail: /img/linux.jpg
+thumbnail: /img/gulugulu.jpg
 date: 2023-03-16T04:59:59.653Z
 title: Google Workspace
 description: "Teman setia dunia kerja dan kolaborasi digital"
