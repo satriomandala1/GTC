@@ -1,15 +1,15 @@
 const siteConfig = {
-  name: 'Guest',
-  shortName: 'Teacher',
-  description: 'Guest-Teacher',
+  name: 'Areta',
+  shortName: 'Guest Teacher',
+  description: 'Guest Teacher',
   url: '/', // Domain of your site without prefix!
   prefix: '/',
-  author: 'Travis Lord & Abdul Waqar',
+  author: 'Areta Training Center',
   twitter: '' ,
   facebook:'',
   github:'',
-  manifest_icon:``,
-  image:``
+  manifest_icon:`src/img/gtc.png`,
+  image:`/gtc.png`
 
 }
 
