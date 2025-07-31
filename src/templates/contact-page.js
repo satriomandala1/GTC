@@ -111,13 +111,13 @@ const ContactPage = ({ data }, location) => {
               {/* General, Purchase, Commissions, Exhibitions, Gallery Feature, Other */}
               <div className="col-12">
                 <select name="category" id="category" onChange={handleChange} required={true}>
-                  <option value>-Nature of Enquiry-</option>
-                  <option value={"General"}>General</option>
-                  <option value={"Purchase"}>Purchase</option>
-                  <option value={"Commissions"}>Commissions</option>
-                  <option value={"Exhibitions"}>Exhibitions</option>
-                  <option value={"Gallery Feature"}>Gallery Feature</option>
-                  <option value={"Other"}>Other</option>
+                  <option value>-Materials-</option>
+                  <option value={"Linux Fundamental"}>Linux Fundamental</option>
+                  <option value={"Web Development"}>Web Development</option>
+                  <option value={"Google Workspace"}>Google Workspace</option>
+                  <option value={"Bisnis Digitals"}>Bisnis Digital</option>
+                  <option value={"Mikrotik Fundamental"}>Mikrotik Fundamental</option>
+                  
                 </select>
               </div>
 
