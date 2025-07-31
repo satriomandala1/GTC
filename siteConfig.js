@@ -4,7 +4,7 @@ const siteConfig = {
   description: 'Guest Teacher',
   url: '/', // Domain of your site without prefix!
   prefix: '/',
-  author: 'Areta Training Center',
+  author: 'Areta Training center',
   twitter: '' ,
   facebook:'',
   github:'',
