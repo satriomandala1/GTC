@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title:  Gatsby Theme 
+title:  Guest Teacher
 image: /img/sampul.jpg
 description: A stunning Gatsby theme designed for captivating image-centric websites, perfect for photographers, portfolios, and blogs.
 thumbnail: /img/sampul.jpg
