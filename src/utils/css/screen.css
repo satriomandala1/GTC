@@ -37,6 +37,31 @@ body {
   background-size: cover;
   border-radius: 100%;
 }
+.taglist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 3rem; /* atas-bawah: 1.25rem, kiri-kanan: 2rem */
+  list-style: none;
+  margin-top: 2rem;
+  padding: 0;
+  max-width: 960px;
+  align-items: center;
+   justify-content: flex-start;
+}
+
+.taglist li a {
+  color: #2a4ec8;
+  font-size: 1.85rem;
+  text-decoration: none;
+  line-height: 1.6;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.taglist li a:hover {
+  color: #1a2d8c;
+  text-decoration: underline;
+}
 
 .hidden {
   visibility: hidden;

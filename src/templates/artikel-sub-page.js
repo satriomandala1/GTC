@@ -18,15 +18,17 @@ const BlogPostTemplate = (props) => {
   const post = props.data.markdownRemark
   const siteTitle = props.data.site.siteMetadata.title
   const social = props.data.site.siteMetadata.social
+  console.log("Tags dikirim ke SEO:", post.frontmatter.tags);
+
   return (
     <Layout location={props.location} title={siteTitle} social={social}>
-      <Seo 
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-        image={post.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images.fallback.src}
+    <Seo 
+  title={post.frontmatter.title}
+  description={post.frontmatter.description || post.excerpt}
+  image={post.frontmatter.thumbnail?.childImageSharp?.gatsbyImageData?.images?.fallback?.src}
+  keywords={post.frontmatter.tags}
+/>
 
-
-      />
       <article
         className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
       >
@@ -69,6 +71,21 @@ const BlogPostTemplate = (props) => {
             </a>
 
           </div>
+          {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
+  <div className="tags-wrapper">
+    <h2 className="tags-title">Tags</h2>
+    <ul className="taglist">
+      {post.frontmatter.tags.map((tag, index) => (
+        <li key={index}>
+          <a href={`/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`}>
+            {tag}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
         </div>
 
       </article>

@@ -4,17 +4,8 @@ thumbnail: /img/webdevelop.jpg
 date: 2023-03-16T04:59:59.653Z
 title: Web Development
 description: "Membangun masa depan dunia digital"
-tags:
-  - kursus web development
-  - training web development
-  - pelatihan web development
-  - belajar web development untuk pemula
-  - kursus membuat website
-  - kursus full stack web development
-  - pelatihan front-end web development
-  - training back-end web development
-  - kursus coding website
-  - kursus pemrograman web profesional
+tags: [ kursus web development,training web development,pelatihan web development,belajar web development untuk pemula,kursus membuat website,kursus full stack web development,pelatihan front-end web development,training back-end web development, kursus coding website,kursus pemrograman web profesional]
+ 
 ---
 
 

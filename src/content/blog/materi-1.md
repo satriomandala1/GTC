@@ -4,17 +4,9 @@ thumbnail: /img/linux.jpg
 date: 2023-03-16T04:59:59.653Z
 title: Linux Fundamental
 description: "Dasar-Dasar yang Harus Kamu Pahami"
-tags:
-- kursus linux fundamental
-- training linux fundamental
-- pelatihan linux fundamental
-- belajar linux fundamental untuk pemula
-- kursus jaringan linux fundamental
-- kursus sistem operasi linux fundamental
-- training command line linux fundamental
-- pelatihan terminal linux fundamental
-- kursus dasar-dasar linux fundamental
-- kursus shell dan bash linux fundamental
+tags: ["belajar linux fundamental untuk pemula", "kursus dasar-dasar linux fundamental", "kursus jaringan linux fundamental", "kursus linux fundamental", "kursus shell dan bash linux fundamental", "kursus sistem operasi linux fundamental", "pelatihan linux fundamental", "pelatihan terminal linux fundamental", "training command line linux fundamental", "training linux fundamental"]
+
+
 
 
 ---
