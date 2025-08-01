@@ -23,7 +23,7 @@ Zaman sekarang, hampir semua hal bisa dilakukan lewat internet. Belanja, pesan m
 
 Tapi apa sih sebenarnya bisnis digital itu? Gimana cara kerjanya? Dan yang paling penting, kenapa sekarang banyak orang berlomba-lomba masuk ke dunia bisnis digital? Artikel ini akan membahas secara lengkap dan mudah dimengerti tentang **apa itu bisnis digital, keuntungannya, jenis-jenisnya, hingga tips sukses menjalankannya**.
 
----
+
 
 ## **Apa Itu Bisnis Digital?**
 
@@ -33,7 +33,6 @@ Contoh sederhananya: kamu punya toko baju. Kalau kamu jualan langsung di toko fi
 
 Jadi intinya, bisnis digital **bukan sekadar "jualan online", tapi bagaimana kamu mengintegrasikan teknologi dalam seluruh aspek bisnismu.**
 
----
 
 ## **Kenapa Harus Bisnis Digital?**
 
@@ -55,7 +54,7 @@ Banyak proses bisa diotomatisasi, seperti sistem pembayaran, pengiriman otomatis
 
 Kamu bisa tahu langsung produk mana yang laris, siapa pelangganmu, dan dari mana mereka datang.
 
----
+
 
 ## **Contoh-Contoh Bisnis Digital**
 
@@ -71,7 +70,7 @@ Bentuk bisnis digital sangat beragam. Berikut beberapa contoh yang paling popule
 | **Content Creator / Influencer** | Menghasilkan uang lewat konten YouTube, TikTok, atau Instagram. Bisa dari adsense, sponsor, dan jualan.        |
 | **Freelancing**                  | Menawarkan jasa secara online, seperti desain grafis, penulisan, coding, editing video, dll.                   |
 
----
+
 
 ## **Platform yang Bisa Digunakan**
 
@@ -83,7 +82,7 @@ Untuk menjalankan bisnis digital, ada banyak platform yang bisa kamu manfaatkan:
 * **Platform Freelance**: Fiverr, Upwork, Projects.co.id
 * **Platform Pembelajaran**: Udemy, Skillshare, Teachable
 
----
+
 
 ## **Langkah-Langkah Memulai Bisnis Digital**
 
@@ -117,7 +116,7 @@ Respon cepat, sopan, dan ramah bisa bikin pelanggan loyal.
 
 Gunakan tools seperti Google Analytics, Meta Ads Manager, atau insight dari marketplace untuk melihat performa bisnis kamu.
 
----
+
 
 ## **Tantangan dalam Bisnis Digital**
 
@@ -135,7 +134,7 @@ Walaupun terdengar mudah, tetap ada tantangannya. Berikut beberapa di antaranya:
 * **Butuh Konsistensi**
   Konten harus terus dibuat, pelayanan harus responsif. Konsistensi adalah kunci.
 
----
+
 
 ## **Tips Sukses Menjalankan Bisnis Digital**
 
@@ -154,7 +153,7 @@ Walaupun terdengar mudah, tetap ada tantangannya. Berikut beberapa di antaranya:
 5. **Gunakan Data untuk Keputusan**
    Jangan asal tebak. Lihat data penjualan, trafik, dan insight pelanggan untuk strategi selanjutnya.
 
----
+
 
 ## **Kesimpulan**
 
@@ -164,6 +163,5 @@ Entah kamu seorang pelajar, ibu rumah tangga, karyawan, atau pebisnis pemula —
 
 > **Ingat: zaman berubah, cara berbisnis juga berubah. Tapi semangat dan kejujuran tetap jadi pondasi utama.**
 
----
 
 

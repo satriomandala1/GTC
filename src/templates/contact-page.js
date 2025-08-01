@@ -49,17 +49,17 @@ const ContactPage = ({ data }, location) => {
       {data.markdownRemark.frontmatter.thumbnail && (
       
     <div className="post-content-image">
-       <GatsbyImage
+       {/* <GatsbyImage
         image={getImage(data.markdownRemark.frontmatter.thumbnail)}
           className="kg-image"
           alt={data.markdownRemark.frontmatter.title}
-    />
+    /> */}
   </div>
 )}
 
         <div className="post-content-body">
           <p></p>
-          <h3 id="forms">Form</h3>
+          <h3 id="forms"><b>Form</b></h3>
           <form name="contact" method="POST" data-netlify="true" action="thanks" onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value="contact" />

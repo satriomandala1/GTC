@@ -18,7 +18,7 @@ Di dunia teknologi informasi saat ini, sistem operasi (OS) memegang peranan pent
 
 Mungkin kamu sering mendengar kata “Linux” tapi belum benar-benar memahami apa itu Linux, mengapa penting, dan bagaimana cara menggunakannya. Nah, di artikel ini kita akan membahas **"Linux Fundamental"** atau dasar-dasar Linux secara lengkap dan mudah dimengerti. Cocok banget buat pemula yang ingin masuk ke dunia open-source atau IT secara profesional.
 
----
+
 
 ## **Apa Itu Linux?**
 
@@ -26,7 +26,7 @@ Linux adalah sistem operasi open-source berbasis Unix yang dikembangkan pertama 
 
 Linux bukan cuma satu sistem operasi, melainkan sebuah **kernel** — inti dari sistem operasi. Kernel ini digunakan oleh banyak **distribusi Linux (distro)** seperti Ubuntu, Debian, CentOS, Fedora, Kali Linux, dan banyak lagi. Masing-masing distro memiliki ciri khas dan target pengguna yang berbeda.
 
----
+
 
 ## **Mengapa Memilih Linux?**
 
@@ -38,7 +38,7 @@ Berikut beberapa alasan mengapa banyak orang dan perusahaan besar menggunakan Li
 * **Dukungan Komunitas**: Komunitas Linux sangat besar dan aktif.
 * **Kustomisasi Tinggi**: Kamu bisa mengubah hampir semua aspek sistem sesuai kebutuhanmu.
 
----
+
 
 ## **Komponen Dasar Sistem Linux**
 
@@ -70,11 +70,11 @@ Setiap pengguna di Linux memiliki hak akses tertentu. Ada 3 jenis permission:
 * **Write (w)** – untuk menulis/mengubah file
 * **Execute (x)** – untuk menjalankan file
 
----
 
 ## **Dasar-Dasar Perintah di Terminal Linux**
 
 Berikut ini beberapa perintah dasar yang wajib kamu kuasai saat belajar Linux:
+ ```
 
 | Perintah      | Fungsi                               |
 | ------------- | ------------------------------------ |
@@ -90,7 +90,7 @@ Berikut ini beberapa perintah dasar yang wajib kamu kuasai saat belajar Linux:
 | `chmod`       | Mengubah permission file             |
 | `chown`       | Mengubah kepemilikan file            |
 
----
+ ```
 
 ## **Manajemen Pengguna di Linux**
 
@@ -101,7 +101,7 @@ Linux memberikan fleksibilitas dalam mengelola pengguna dan grup. Berikut bebera
 * `deluser namauser` – Menghapus user
 * `usermod -aG grup namauser` – Menambahkan user ke grup tertentu
 
----
+
 
 ## **Manajemen Software di Linux**
 
@@ -126,7 +126,6 @@ Linux menggunakan **package manager** untuk mengelola software. Beberapa contoh:
   sudo pacman -S nama-paket
   ```
 
----
 
 ## **Penggunaan Linux di Dunia Nyata**
 
@@ -138,7 +137,6 @@ Linux tidak hanya digunakan oleh kalangan developer atau sysadmin, tapi juga:
 * **IoT dan Embedded System** – Raspberry Pi, robot, dll.
 * **Android** – Sistem operasi Android berbasis kernel Linux
 
----
 
 ## **Tips Belajar Linux untuk Pemula**
 
@@ -148,7 +146,7 @@ Linux tidak hanya digunakan oleh kalangan developer atau sysadmin, tapi juga:
 4. **Bergabung di Komunitas** – Forum seperti Linux.org, Reddit, atau komunitas lokal.
 5. **Praktik Langsung** – Coba hosting server lokal, membuat cron job, backup otomatis, dll.
 
----
+
 
 ## **Kesimpulan**
 
@@ -156,7 +154,6 @@ Linux tidak hanya digunakan oleh kalangan developer atau sysadmin, tapi juga:
 
 Mulailah dengan dasar, eksplorasi distro yang kamu sukai, dan jangan takut mencoba hal baru. Dunia Linux menunggu kamu untuk dieksplorasi!
 
----
 
 
 

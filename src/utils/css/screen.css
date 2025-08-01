@@ -74,7 +74,7 @@ body {
 .site-main {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-color: #FEC52E;
+    background-color: white;
     
   }
 .site-wrapper {
@@ -83,7 +83,7 @@ body {
   max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #FEC52E;
+  background-color: white;
  
 }
 @media (max-width: 850px) {
@@ -193,9 +193,9 @@ footer.site-foot a {
   background-color: navy;
   z-index: 1000;
   transition: all 0.3s ease;
-  padding: 20px 0;
+  padding: 12px 0;
   box-shadow: none;
-  border-radius: 15px;
+
 }
 
 /* Saat discroll */
@@ -259,7 +259,7 @@ footer.site-foot a {
   display: flex;
   justify-content: space-between; /* kiri dan kanan berjauhan */
   align-items: center;
-  padding: 10px 20px; /* bisa disesuaikan */
+  padding: 9px 15px; /* bisa disesuaikan */
 }
 
 .site-head-left {
@@ -702,26 +702,29 @@ footer.site-foot a {
 }
 
 .post-content-body h1{
-    color: white !important;
+    
 }
 .post-content-body h2{
-    color: white !important;
+   
 }
 .post-content-body h3{
-    color: white !important;
+    
 }
 
 .post-content-body h4{
-    color: white !important;
+    
 }
-.post-content-body h5{
-    color: white !important;
-}
+.post-content-body h5{} 
 .post-content-body h6 {
-   color: white !important;
+   color: black;
 }
 .post-content-body #forms {
-  color: white !important;
+  color: black;
+  font-style: italic;
+  display: block;
+  margin-top: 100px !important;
+  padding-top: 100px;
+ 
 }
 
 

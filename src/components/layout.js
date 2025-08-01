@@ -108,7 +108,7 @@ useEffect(() => {
         </div>
       </header>
 
-      <main id="site-main" className="site-main" style={{ backgroundColor: "#FEC52E" }}>
+      <main id="site-main" className="site-main" style={{ backgroundColor: "white" }}>
         <div id="swup" className="transition-fade">
           {children}
         </div>
@@ -121,16 +121,12 @@ useEffect(() => {
           target="_blank"
           rel="noopener noreferrer"
         >
-<div class="marquee-wrapper">
-  <div class="marquee-track scroll-right">
+
     <div class="marquee-content">
-      PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA• PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA• PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA •
+      PT. ARETANET INDONESIA 
     </div>
-    <div class="marquee-content">
-      PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA• PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA• PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA •
-</div>
-  </div>
-</div>
+   
+
 
 
 

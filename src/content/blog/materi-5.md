@@ -26,7 +26,7 @@ Nah, di balik jaringan internet yang lancar, ada perangkat-perangkat jaringan ya
 
 Kalau kamu sedang belajar jaringan atau ingin jadi teknisi IT, **MikroTik adalah salah satu skill yang wajib dikuasai**. Artikel ini akan membahas secara lengkap dan santai tentang **MikroTik Fundamental** — dari pengenalan dasar, fungsi-fungsinya, hingga tips belajar bagi pemula.
 
----
+
 
 ## **Apa Itu MikroTik?**
 
@@ -39,7 +39,6 @@ Produk utamanya terbagi dua:
 
 Dengan MikroTik, kamu bisa melakukan hampir semua hal yang berkaitan dengan jaringan: membuat hotspot, membatasi bandwidth, firewall, routing antar jaringan, dan banyak lagi.
 
----
 
 ## **Kenapa Harus Belajar MikroTik?**
 
@@ -53,7 +52,7 @@ MikroTik bukan hanya populer di Indonesia, tapi juga di seluruh dunia. Berikut a
 
 Kalau kamu ingin jadi teknisi jaringan, admin IT, atau buka usaha internet (seperti RT/RW net), maka **MikroTik adalah bekal wajib.**
 
----
+
 
 ## **Fitur-Fitur Dasar MikroTik**
 
@@ -69,7 +68,7 @@ Berikut ini beberapa fungsi dasar MikroTik yang sering digunakan:
 | **Bridge & Switch**      | Menghubungkan beberapa perangkat dalam satu jaringan lokal |
 | **Monitoring**           | Memantau trafik dan perangkat yang terhubung               |
 
----
+
 
 ## **Mengenal Antarmuka MikroTik**
 
@@ -91,7 +90,7 @@ Akses MikroTik lewat CLI (Command Line Interface). Cocok untuk user yang lebih m
 
 Mengakses MikroTik dari jarak jauh melalui protokol SSH atau Telnet.
 
----
+
 
 ## **Dasar-Dasar Konfigurasi MikroTik**
 
@@ -131,7 +130,7 @@ Supaya klien dapat IP otomatis:
 /ip dhcp-server setup
 ```
 
----
+
 
 ## **Topologi Jaringan MikroTik Sederhana**
 
@@ -149,13 +148,13 @@ Supaya klien dapat IP otomatis:
 
 Kamu bisa mulai dengan topologi sederhana ini dan nanti berkembang ke topologi yang lebih kompleks, seperti multi-VLAN, jaringan antar cabang (VPN), dan lainnya.
 
----
+
 
 ## **Lisensi MikroTik**
 
 RouterOS memiliki beberapa level lisensi (Level 3 – 6), dengan fitur berbeda. Tapi untuk belajar, kamu bisa gunakan **versi CHR (Cloud Hosted Router)** di virtual machine secara **gratis**.
 
----
+
 
 ## **Cara Belajar MikroTik untuk Pemula**
 
@@ -165,7 +164,7 @@ RouterOS memiliki beberapa level lisensi (Level 3 – 6), dengan fitur berbeda. 
 4. **Baca Forum & Grup Telegram MikroTik** – Tanya jawab langsung ke komunitas.
 5. **Praktek Langsung** – Semakin sering praktek, semakin paham.
 
----
+
 
 ## **Sertifikasi MikroTik**
 
@@ -182,7 +181,7 @@ Kalau kamu serius ingin berkarier di dunia jaringan, kamu bisa ambil sertifikasi
 
 MTCNA biasanya jadi **langkah awal** sebelum naik ke sertifikat lainnya.
 
----
+
 
 ## **Kelebihan & Kekurangan MikroTik**
 
@@ -200,7 +199,7 @@ MTCNA biasanya jadi **langkah awal** sebelum naik ke sertifikat lainnya.
 * Harus rajin belajar karena banyak fitur advanced
 * Beberapa fitur premium perlu lisensi level tinggi
 
----
+
 
 ## **Kesimpulan**
 
@@ -210,5 +209,5 @@ Jadi, kalau kamu ingin “megang” jaringan sendiri, atau ingin jadi “orang p
 
 > Belajar jaringan itu seperti menyusun puzzle. Awalnya bingung, tapi kalau satu per satu disusun, lama-lama kamu bakal paham gambaran besarnya.
 
----
+
 

@@ -22,7 +22,6 @@ Di zaman serba online seperti sekarang ini, bekerja atau belajar tanpa bantuan t
 
 Tapi... apa sih sebenarnya Google Workspace itu? Kenapa banyak perusahaan, sekolah, bahkan UMKM sekalipun mulai beralih menggunakan layanan ini?
 
----
 
 ## Apa Itu Google Workspace?
 
@@ -37,7 +36,7 @@ Tapi... apa sih sebenarnya Google Workspace itu? Kenapa banyak perusahaan, sekol
 
 Intinya, semua yang kamu butuhkan untuk bekerja atau belajar bisa dilakukan dalam satu platform yang terintegrasi.
 
----
+
 
 ## Mengapa Google Workspace Sangat Berguna?
 
@@ -59,7 +58,6 @@ Google Drive memungkinkan kamu menyimpan ribuan file tanpa takut hilang. Bahkan 
 
 Dengan Gmail versi bisnis, kamu bisa punya alamat email seperti `namamu@namaperusahaan.com`. Kelihatan lebih profesional, kan?
 
----
 
 ## Siapa Saja yang Cocok Menggunakan Google Workspace?
 
@@ -70,7 +68,6 @@ Jawabannya: **semua orang**.
 * **Freelancer dan pekerja remote**: Agar tetap produktif dan terorganisir.
 * **Tim kreatif dan manajemen proyek**: Untuk brainstorming ide dan pengaturan deadline.
 
----
 
 ## Fitur-Fitur Menarik di Google Workspace
 
@@ -85,7 +82,7 @@ Berikut beberapa fitur keren yang sering bikin orang jatuh cinta pada Google Wor
 | **Add-ons & Integrasi**   | Bisa dihubungkan dengan Slack, Zoom, Trello, dan tools lain         |
 | **Keamanan dan Enkripsi** | Data kamu terenkripsi dan dilindungi dengan baik oleh sistem Google |
 
----
+
 
 ## Kelebihan Google Workspace
 
@@ -95,7 +92,7 @@ Berikut beberapa fitur keren yang sering bikin orang jatuh cinta pada Google Wor
 ✅ **Fleksibel untuk berbagai skala organisasi**.
 ✅ **Aman dan bisa dikontrol admin** – Cocok untuk manajemen data perusahaan.
 
----
+
 
 ## Berapa Biayanya?
 
@@ -103,7 +100,7 @@ Google Workspace memang berbayar, tapi masih sangat terjangkau. Biasanya dihitun
 
 Tapi untuk **lembaga pendidikan**, Google menyediakan **Google Workspace for Education** secara gratis (dengan beberapa syarat).
 
----
+
 
 ## Bagaimana Cara Memulai?
 
@@ -113,7 +110,6 @@ Tapi untuk **lembaga pendidikan**, Google menyediakan **Google Workspace for Edu
 4. Tambahkan pengguna dan atur setting admin.
 5. Mulai bekerja lebih cerdas dan efisien!
 
----
 
 ## Penutup: Saatnya Kerja Lebih Pintar, Bukan Lebih Berat
 
@@ -121,7 +117,7 @@ Google Workspace bukan hanya soal alat-alat digital. Ia adalah sebuah **ekosiste
 
 Jadi, kalau kamu masih kerja manual atau pindah-pindah platform untuk berbagai tugas, mungkin ini saatnya mencoba Google Workspace. Siapa tahu, perubahan kecil ini bisa membawa lompatan besar dalam produktivitasmu.
 
----
+
 
 **Tags**: Google Workspace, G Suite, Kolaborasi Online, Alat Produktivitas Google, Google Meet, Cloud Office, Manajemen Tugas Digital, Workspace untuk Sekolah, Email Bisnis, Google Apps
 
