@@ -74,6 +74,7 @@ body {
 .site-main {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    background-color: #FEC52E;
     
   }
 .site-wrapper {
@@ -82,6 +83,7 @@ body {
   max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
+  background-color: #FEC52E;
  
 }
 @media (max-width: 850px) {
@@ -171,27 +173,75 @@ footer.site-foot a {
 /* Site Navigation
 /* ---------------------------------------------------------- */
 
-.site-head {
-  position: relative;
-  z-index: 300;
-  margin-top: 10px;
-  font-size: 2.5rem;
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 100%;
-  padding: 3rem 5rem;
-  box-sizing: border-box;
-  background-color: red; 
-  font-size: larger;
-  border-radius: 15px;
-  color: white;
-  text-decoration: none;
-
-
-
-
-  
-  
+  background-color: navy;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  padding: 20px 0;
+  box-shadow: none;
 }
+
+/* Efek awal navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: navy;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  padding: 20px 0;
+  box-shadow: none;
+  border-radius: 15px;
+}
+
+/* Saat discroll */
+#navbar.scrolled {
+  background-color: #000080ee;
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: navy;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+}
+
+.marquee-content {
+  white-space: nowrap;
+  font-size: 20px;
+  color: white;
+  padding-right: 50px;
+  display: inline-block;
+}
+
+/* Tambahkan kelas scroll-right untuk arah kanan */
+.scroll-right {
+  animation: scroll-right 20s linear infinite;
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 /* Ubah warna dan ukuran teks navbar */
 .navbar-text a {
   color: white;
@@ -207,44 +257,45 @@ footer.site-foot a {
 
 .site-head-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* kiri dan kanan berjauhan */
   align-items: center;
-  margin: 0 1rem;
+  padding: 10px 20px; /* bisa disesuaikan */
 }
 
 .site-head-left {
-  position: relative;
-  z-index: 100;
   display: flex;
-  align-items: center;
-  margin-right: 10px;
-  white-space: nowrap;
+  flex: 1; /* mengambil space maksimal */
+   transition: background-color 0.3s ease;
 }
-
-.nav {
+.site-head-left ul.nav {
   display: flex;
-  margin: 0 0 0 -12px;
-  padding: 0;
   list-style: none;
-}
-
-.site-head li {
-  display: block;
-  margin: 0;
   padding: 0;
-}
-
-.site-head-left a,
-.site-head-right a {
-  display: block;
   margin: 0;
-  padding: 10px 12px;
-  color: white !important;  
-  font-weight: 600;
-  opacity: 1;                
-
-
+  gap: 20px; /* spasi antar menu */
+  transition: all 0.5s ease;
 }
+
+.site-head-left ul.nav li a {
+  color: white;
+  text-decoration: none;
+   transition: all 0.5s ease;
+}
+
+.site-head-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end; /* kanan */
+  gap: 15px; /* spasi antar link sosial */
+}
+
+.site-head-right .social-links a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  
+}
+
 
 .nav-current a,
 .site-head a:hover {
@@ -296,6 +347,7 @@ footer.site-foot a {
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .subscribe-button {
@@ -426,7 +478,7 @@ footer.site-foot a {
   .site-head-open .site-head-right {
     z-index: 9999;
     height: auto;
-    transition: height 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition: all 0.5s ease;
   }
 
   .site-head-open .site-head-left a,
@@ -467,13 +519,17 @@ footer.site-foot a {
   position: relative;
   height: 35vw;
   background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-size: cover;
   overflow: hidden;
   counter-increment: posts;
+  transition: transform 0.2s;
   margin: 1rem;
-  border-radius: 12px;  
+  border-radius: 15px;  
 }
-
+.post-card:hover {
+    transform: scale(1.03);
+}
 @media (max-width: 700px) {
   .post-card {
     flex: 1 1 100%;
@@ -500,14 +556,18 @@ footer.site-foot a {
   right: 0;
   bottom: 0;
   left: 0;
+  border-radius: 10px;
   color: #fff;
   background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   opacity: 1;
-  transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
+  transition: transform 0.2s;
 }
 
 .post-card.with-image .post-card-content {
   opacity: 0;
+  transform: scale(1.03);
 }
 @media (max-width: 700px) {
   .post-card.with-image .post-card-content {
@@ -641,14 +701,29 @@ footer.site-foot a {
   }
 }
 
-.post-content-body h1,
-.post-content-body h2,
-.post-content-body h3,
-.post-content-body h4,
-.post-content-body h5,
-.post-content-body h6 {
-  color: var(--color-base);
+.post-content-body h1{
+    color: white !important;
 }
+.post-content-body h2{
+    color: white !important;
+}
+.post-content-body h3{
+    color: white !important;
+}
+
+.post-content-body h4{
+    color: white !important;
+}
+.post-content-body h5{
+    color: white !important;
+}
+.post-content-body h6 {
+   color: white !important;
+}
+.post-content-body #forms {
+  color: white !important;
+}
+
 
 .post-content-body li {
   word-break: break-word;
@@ -816,7 +891,10 @@ footer.site-foot a {
 
 
 /* Image boarder */
-.kg-image { border-radius: 10px; }
+.kg-image { 
+  border-radius: 10px;
+  margin-top: 10px;
+ }
 
 img.gatsby-resp-image-image { border-radius: 10px !important;}
 

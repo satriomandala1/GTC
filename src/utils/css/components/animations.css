@@ -6,6 +6,8 @@
     opacity: 1;
     animation: slideUp 0.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
     transform: translate3d(0, 4vh, 0);
+    background-color: white;
+    border-radius: 15px;
 }
 html.is-animating .transition-fade {
     opacity: 0;

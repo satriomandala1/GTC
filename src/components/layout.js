@@ -1,15 +1,36 @@
-import React from "react";
+
 import { Link } from "gatsby";
 import { useLocation } from "@reach/router";
+import React, { useEffect, useState } from "react";
+
 
 const Layout = (props) => {
   const data = useLocation();
   const { title, children, social } = props;
 
   const [toggleNav, setToggleNav] = React.useState(false);
+useEffect(() => {
+  const handleScroll = () => {
+    const navbar = document.getElementById("navbar");
+    if (!navbar) return; // ⛑️ Cegah error kalau elemen belum ada
+
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+
+  
   return (
+    
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
-      <header className="site-head" style={{ width: "100%", backgroundColor: "#00008B", padding: "16px 32px" }}>
+      <header className="site-head" id="navbar">
         <div className="site-head-container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           
           <a
@@ -54,6 +75,7 @@ const Layout = (props) => {
               </li>
             </ul>
           </nav>
+          
 
           <div className="site-head-right">
             <div className="social-links">
@@ -86,7 +108,7 @@ const Layout = (props) => {
         </div>
       </header>
 
-      <main id="site-main" className="site-main" style={{ backgroundColor: "#f5f5f5" }}>
+      <main id="site-main" className="site-main" style={{ backgroundColor: "#FEC52E" }}>
         <div id="swup" className="transition-fade">
           {children}
         </div>
@@ -99,7 +121,19 @@ const Layout = (props) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          PT. ARETANET INDONESIA
+<div class="marquee-wrapper">
+  <div class="marquee-track scroll-right">
+    <div class="marquee-content">
+      PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA• PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA• PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA •
+    </div>
+    <div class="marquee-content">
+      PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA• PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA• PT. ARETANET INDONESIA • PT. ARETANET INDONESIA • PT. ARETANET INDONESIA •
+</div>
+  </div>
+</div>
+
+
+
         </a>
       </footer>
     </div>
