@@ -1,6 +1,6 @@
 ---
 templateKey: exhibitions-sub-page
-thumbnail: img/Yuppentek12.jpg
+thumbnail: /img/Yuppentek12.jpg
 date: 2023-03-06T05:10:14.676Z
 title: SMK Yuppentek1
 description: ""

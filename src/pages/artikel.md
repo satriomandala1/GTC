@@ -7,7 +7,7 @@ description: Discover success stories on our Clay theme Sold page. Explore our a
 number: 3
 pagetype:
   - main
-featuredimage: 
+featuredimage: /img/
 ---
 
 
