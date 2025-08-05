@@ -7,4 +7,4 @@ description:
 number: 5
 pagetype:
   - main
-featuredimage: 
+featuredimage: /img/

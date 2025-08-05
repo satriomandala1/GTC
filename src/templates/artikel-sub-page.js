@@ -27,7 +27,8 @@ const BlogPostTemplate = (props) => {
  <Seo 
   title={post?.frontmatter?.title || "No title"}
   description={post?.frontmatter?.description || post?.excerpt || "No description"}
-  image={post?.frontmatter?.thumbnail?.childImageSharp?.gatsbyImageData?.images?.fallback?.src || ""}
+ image={post?.frontmatter?.thumbnail || ""}
+
   keywords={post?.frontmatter?.tags || []}
 />
 
@@ -119,13 +120,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
-        thumbnail {
-          childImageSharp {
-            fluid(maxWidth: 1200) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        thumbnail  # ✅ SUDAH DIBENERIN
       }
     }
   }

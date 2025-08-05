@@ -17,7 +17,8 @@ const WorkPage = ({ data }) => {
       <Seo
         title={data.markdownRemark.frontmatter.title}
         description={data.markdownRemark.frontmatter.description || ''}
-        image={data.markdownRemark.frontmatter.thumbnail?.childImageSharp?.fluid?.src || ''}
+        image={data.markdownRemark.frontmatter.thumbnail || ''}
+
 
 
       />
@@ -51,30 +52,26 @@ query IndexPage {
   site {
     siteMetadata {
       title
-      social{
+      social {
         twitter
         facebook
       }
+      description
     }
   }
-  markdownRemark(frontmatter: {templateKey: {eq: "news-page"}}) {
+
+  markdownRemark(frontmatter: { templateKey: { eq: "news-page" } }) {
     frontmatter {
       title
       description
-      thumbnail {
-        childImageSharp {
-          fluid(maxWidth: 1360) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+      thumbnail
     }
-    
   }
+
   allMarkdownRemark(
-    filter: {frontmatter: {templateKey: {eq: "blog-post"}}}
+    filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
     limit: 30
-    sort: {frontmatter: {date: DESC}}
+    sort: { frontmatter: { date: DESC } }
   ) {
     edges {
       node {
@@ -85,16 +82,11 @@ query IndexPage {
           date(formatString: "DD:MM:YYYY hh:mm a")
           title
           description
-          thumbnail {
-            childImageSharp {
-              fluid(maxWidth: 1360) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          thumbnail
         }
       }
     }
   }
 }
+
 `;

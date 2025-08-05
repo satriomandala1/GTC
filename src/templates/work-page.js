@@ -17,7 +17,8 @@ const WorkPage = ({ data }) => {
       <Seo keywords={[`Gatsby Theme`, `Free Gatsby Template`, `Clay Gatsby Theme`]}
         title={data.markdownRemark.frontmatter.title}
         description={data.markdownRemark.frontmatter.description || ''}
-        image={data.markdownRemark.frontmatter.thumbnail?.childImageSharp?.fluid?.src || ''}
+        image={data.markdownRemark.frontmatter.thumbnail || ''}
+
 
 
       />
@@ -47,35 +48,28 @@ const WorkPage = ({ data }) => {
 }
 export default WorkPage
 export const WorkPageQuery = graphql`
-query IndexPage {
+query WorkPage {
   site {
     siteMetadata {
       title
       author
-      social{
+      social {
         twitter
         facebook
       }
     }
   }
-  markdownRemark(frontmatter: {templateKey: {eq: "work-page"}}) {
+  markdownRemark(frontmatter: { templateKey: { eq: "work-page" } }) {
     frontmatter {
       title
       description
-      thumbnail {
-        childImageSharp {
-          fluid(maxWidth: 1360) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+      thumbnail
     }
-    
   }
   allMarkdownRemark(
-    filter: {frontmatter: {templateKey: {eq: "work-sub-page"}}}
+    filter: { frontmatter: { templateKey: { eq: "work-sub-page" } } }
     limit: 30
-    sort: {frontmatter: {date: DESC}}
+    sort: { frontmatter: { date: DESC } }
   ) {
     edges {
       node {
@@ -86,16 +80,10 @@ query IndexPage {
           date(formatString: "DD:MM:YYYY hh:mm a")
           title
           description
-          thumbnail {
-            childImageSharp {
-              fluid(maxWidth: 1360) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          thumbnail
         }
       }
     }
   }
 }
-`;
+`

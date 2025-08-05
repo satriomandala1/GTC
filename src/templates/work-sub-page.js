@@ -38,10 +38,12 @@ const BlogPostTemplate = (props) => {
         )}
         {post.frontmatter.thumbnail && (
           <div className="post-content-image">
-            <GatsbyImage
-              image={getImage(post.frontmatter.thumbnail)}
-              className="kg-image"
-              alt={post.frontmatter.title} />
+     <img
+          src={post.frontmatter.thumbnail}
+           className="kg-image"
+           alt={post.frontmatter.title}
+/>
+
           </div>
         )}
         <div
@@ -94,13 +96,8 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        thumbnail {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          
-          }
-        }
-    
+        thumbnail
+
       }
     }
   }

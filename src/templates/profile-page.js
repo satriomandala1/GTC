@@ -68,15 +68,7 @@ export const query = graphql`
       frontmatter {
         title
         description
-        thumbnail {
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              placeholder: BLURRED
-              width: 1200
-            )
-          }
-        }
+        thumbnail
       }
     }
   }

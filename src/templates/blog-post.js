@@ -44,9 +44,8 @@ const BlogPostTemplate = (props) => {
     pageContext.previous?.frontmatter.templateKey === "blog-post"
 
   // Ambil thumbnail jika tersedia
-  const imageSrc =
-    post.frontmatter.thumbnail?.childImageSharp?.gatsbyImageData?.images
-      ?.fallback?.src || ""
+  const imageSrc = post.frontmatter.thumbnail || ""
+
 
   return (
     <Layout location={location} title={siteTitle} social={social}>
@@ -149,12 +148,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        thumbnail {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
+        thumbnail  # ✅ sudah benar sekarang
       }
     }
   }
 `
+

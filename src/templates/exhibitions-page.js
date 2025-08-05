@@ -14,13 +14,21 @@ const WorkPage = ({ data }) => {
 
     return (
         <Layout title={siteTitle} social={social}>
-       <Seo keywords={[`Gatsby Theme`, `Free Gatsby Template`, `Clay Gatsby Theme`]}
-        title={data.markdownRemark.frontmatter.title}
-        description={data.markdownRemark.frontmatter.description || ''}
-        image={data.markdownRemark.frontmatter.thumbnail?.childImageSharp?.fluid?.src || ''}
+            <Seo
+                keywords={[`Gatsby Theme`, `Free Gatsby Template`, `Clay Gatsby Theme`]}
+                title={data.markdownRemark.frontmatter.title}
+                description={data.markdownRemark.frontmatter.description || ''}
+                image={data.markdownRemark.frontmatter.thumbnail || ''}
+            />
 
-
-      />
+            {data.markdownRemark.frontmatter.thumbnail && (
+                <img
+                    src={data.markdownRemark.frontmatter.thumbnail}
+                    alt={data.markdownRemark.frontmatter.title}
+                    className="kg-image"
+                    style={{ maxWidth: "100%", marginBottom: "2rem", borderRadius: "8px" }}
+                />
+            )}
 
             {data.site.siteMetadata.description && (
                 <header className="page-head">
@@ -29,7 +37,8 @@ const WorkPage = ({ data }) => {
                     </h2>
                 </header>
             )}
-            <div className="post-feed card-con" >
+
+            <div className="post-feed card-con">
                 {posts.map(({ node }) => {
                     postCounter++
                     return (
@@ -45,37 +54,35 @@ const WorkPage = ({ data }) => {
         </Layout>
     )
 }
+
 export default WorkPage
+
 export const WorkPageQuery = graphql`
 query IndexPage {
   site {
     siteMetadata {
       title
       author
-      social{
+      social {
         twitter
         facebook
       }
+      description
     }
   }
-  markdownRemark(frontmatter: {templateKey: {eq: "exhibitions-page"}}) {
+
+  markdownRemark(frontmatter: { templateKey: { eq: "exhibitions-sub-page" } }) {
     frontmatter {
       title
       description
-      thumbnail {
-        childImageSharp {
-          fluid(maxWidth: 1360) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+      thumbnail
     }
-    
   }
+
   allMarkdownRemark(
-    filter: {frontmatter: {templateKey: {eq: "exhibitions-sub-page"}}}
+    filter: { frontmatter: { templateKey: { eq: "exhibitions-sub-page" } } }
     limit: 30
-    sort: {frontmatter: {date: DESC}}
+    sort: { frontmatter: { date: DESC } }
   ) {
     edges {
       node {
@@ -86,16 +93,10 @@ query IndexPage {
           date(formatString: "DD:MM:YYYY hh:mm a")
           title
           description
-          thumbnail {
-            childImageSharp {
-              fluid(maxWidth: 1360) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          thumbnail
         }
       }
     }
   }
 }
-`;
+`

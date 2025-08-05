@@ -189,23 +189,18 @@ const indexQuery = graphql`
     site {
       siteMetadata {
         title
-        social{
+        social {
           twitter
           facebook
         }
       }
     }
-    markdownRemark(frontmatter: {templateKey: {eq: "contact-page"}}) {
+    markdownRemark(frontmatter: { templateKey: { eq: "contact-page" } }) {
       frontmatter {
         title
         description
-        thumbnail {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-                    }
-        }
+        thumbnail
       }
-      
     }
   }
 `

@@ -65,13 +65,7 @@ export const WorkPageQuery = graphql`
       frontmatter {
         title
         description
-        thumbnail {
-          childImageSharp {
-            fluid(maxWidth: 1360) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        thumbnail  # ✅ ubah di sini
       }
     }
 
@@ -90,13 +84,7 @@ export const WorkPageQuery = graphql`
             title
             description
             tags
-            thumbnail {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
+            thumbnail  # ✅ ubah juga di sini
           }
         }
       }

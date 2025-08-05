@@ -5,7 +5,7 @@ date: 2023-03-06T05:10:14.676Z
 title: SMK Islamic Village
 description: ""
 ---
-![kuta3](/img/village2.jpg)
+![kuta3](/img/village2.jpg )
 
 
 

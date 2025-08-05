@@ -5,88 +5,81 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import PostCard from "../components/postCard"
 
-// eslint-disable-next-line
 const IndexPage = ({ data }) => {
-    const siteTitle = data.site.siteMetadata.title
-    const social = data.site.siteMetadata.social
-    const posts = data.allMarkdownRemark.edges
-    let postCounter = 0
+  const siteTitle = data.site.siteMetadata.title
+  const social = data.site.siteMetadata.social
+  const posts = data.allMarkdownRemark.edges
+  const frontmatter = data.markdownRemark.frontmatter
 
-    return (
-        <Layout title={siteTitle} social={social}>
-            <Seo keywords={[`Gatsby Theme`, `Free Gatsby Template`, `Clay Gatsby Theme`]}
-                title={data.markdownRemark.frontmatter.title}
-                description={data.markdownRemark.frontmatter.description ||  ''}
-                image={data.markdownRemark.frontmatter.thumbnail?.childImageSharp?.fluid?.src || ''}
+  const seoImage = frontmatter?.thumbnail
 
+  let postCounter = 0
 
-            />           
-            <div className="post-feed">
-                {posts.map(({ node }) => {
-                    postCounter++
-                    return (
-                        <PostCard
-                            key={node.fields.slug}
-                            count={postCounter}
-                            node={node}
-                            postClass={`post`}
-                        />
-                    )
-                })}
-            </div>
-        </Layout>
-    )
+  return (
+    <Layout title={siteTitle} social={social}>
+      <Seo
+        keywords={[`Gatsby Theme`, `Free Gatsby Template`, `Clay Gatsby Theme`]}
+        title={frontmatter.title}
+        description={frontmatter.description || ''}
+        image={seoImage}
+      />
+      <div className="post-feed">
+        {posts.map(({ node }) => {
+          postCounter++
+          return (
+            <PostCard
+              key={node.fields.slug}
+              count={postCounter}
+              node={node}
+              postClass={`post`}
+            />
+          )
+        })}
+      </div>
+    </Layout>
+  )
 }
+
 export default IndexPage
+
 export const IndexPageQuery = graphql`
   query IndexPage {
     site {
-        siteMetadata {
-          title
-          social{
-            twitter
-            facebook
-          }    
+      siteMetadata {
+        title
+        social {
+          twitter
+          facebook
         }
       }
-      markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
-        frontmatter {
-          title
-          description
-          thumbnail {
-            childImageSharp {
-              fluid(maxWidth: 1360) {
-                ...GatsbyImageSharpFluid
-              }
-            }
+    }
+
+    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      frontmatter {
+        title
+        description
+        thumbnail
+      }
+    }
+
+    allMarkdownRemark(
+      filter: { frontmatter: { pagetype: { eq: "main" } } }
+      limit: 30
+      sort: { frontmatter: { number: ASC } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
           }
-        }
-        
-      }
-      allMarkdownRemark(
-        filter: {frontmatter: {pagetype: {eq: "main"}}}
-        limit: 30
-        sort: {frontmatter: {number: ASC}}
-      ) {
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              date(formatString: "MMMM DD,YYYY")
-              title
-              description
-              thumbnail {
-                childImageSharp {
-                  fluid(maxWidth: 1360) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+            thumbnail
           }
         }
       }
+    }
   }
-`;
+`
