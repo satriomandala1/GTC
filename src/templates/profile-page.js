@@ -1,83 +1,83 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import React from "react"
+import PropTypes from "prop-types"
+import { graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-// eslint-disable-next-line
 
+const ArtikelPage = ({ data, location }) => {
+  const { markdownRemark: post, site } = data
+  const { title, description, thumbnail } = post.frontmatter
+  const image = getImage(thumbnail)
 
-const profilePage = (props) => {
+  return (
+    <Layout location={location} title={site.siteMetadata.title} social={site.siteMetadata.social}>
+      <Seo
+        title={title}
+        description={description}
+        image={image?.images?.fallback?.src}
+        keywords={["Artikel", "Guest Teacher", "AretaNet Indonesia"]}
+      />
 
+      <article className={`post-content ${image ? "with-image" : "no-image"}`}>
+        <header className="post-content-header">
+          <h1 className="post-content-title">{title}</h1>
+        </header>
 
-    const { markdownRemark: post, site } = props.data;
+        {description && (
+          <p className="post-content-excerpt">{description}</p>
+        )}
 
-    return (
-        <Layout location={props.location} title={site.siteMetadata.title } social={site.siteMetadata.social}>
-        <Seo keywords={[`Gatsby Theme`, `Free Gatsby Template`, `Clay Gatsby Theme`]}
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || ''}
-  image={post.frontmatter.thumbnail?.childImageSharp?.gatsbyImageData?.images?.fallback?.src}
+        {image && (
+          <div className="post-content-image">
+            <GatsbyImage image={image} alt={title} className="kg-image" />
+          </div>
+        )}
 
-
+        <div
+          className="post-content-body"
+          dangerouslySetInnerHTML={{ __html: post.html }}
         />
-        <article
-          className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
-        >
-          <header className="post-content-header">
-            <h1 className="post-content-title">{post.frontmatter.title}</h1>
-          </header>
-          {post.frontmatter.description && (
-            <p className="post-content-excerpt">{post.frontmatter.description}</p>
-          )}
-          {post.frontmatter.thumbnail && (
-            <div className="post-content-image">
-              <GatsbyImage
-                image={getImage(post.frontmatter.thumbnail)}
-                className="kg-image"
-                alt={post.frontmatter.title} />
-            </div>
-          )}
-          <div
-            className="post-content-body"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-          <footer className="post-content-footer">
-          </footer>
-        </article>
-      </Layout>
-    );
-};
 
-profilePage.propTypes = {
-    data: PropTypes.object.isRequired,
-};
+        <footer className="post-content-footer"></footer>
+      </article>
+    </Layout>
+  )
+}
 
-export default profilePage;
+ArtikelPage.propTypes = {
+  data: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+}
 
-export const profilePageQuery = graphql`
-  query profilePage {
+export default ArtikelPage
+export const query = graphql`
+  query ArtikelPage {
     site {
-        siteMetadata {
-          title
-          social{
-            twitter
-            facebook
+      siteMetadata {
+        title
+        social {
+          twitter
+          facebook
+        }
+      }
+    }
+
+    markdownRemark(frontmatter: { templateKey: { eq: "artikel-page" } }) {
+      html
+      frontmatter {
+        title
+        description
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(
+              layout: CONSTRAINED
+              placeholder: BLURRED
+              width: 1200
+            )
           }
         }
       }
-    markdownRemark(frontmatter: {templateKey: {eq: "profile-page"}}) {
-        frontmatter {
-          title
-          description
-          thumbnail {
-            childImageSharp {
-              gatsbyImageData
-            
-            }
-          }
-        }
-        html
-      }
+    }
   }
-`;
+`
